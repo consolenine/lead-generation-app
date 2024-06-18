@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/usr/src/app
+    depends_on:
+      - db
+    environment:
+      - ENVIRONMENT=prod
+      - CHROMEDRIVER_PATH=/usr/local/bin/chromedriver
+      - CHROME_PATH=/usr/bin/chromium
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+
+  db:
+    image: postgres:16
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=lead_app_db
+      - POSTGRES_USER=lead_app_admin
+      - POSTGRES_PASSWORD=lead_pass
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+
+volumes:
+  postgres_data:
+  node_modules:

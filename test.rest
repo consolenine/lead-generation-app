@@ -1,0 +1,8 @@
+POST http://127.0.0.1:8000/api/scraper/generate/ HTTP/1.1
+content-type: application/json
+Authorization: Token 9f616b565dda08dac8f1f39975f89f74bbf0dbfb9092c0823535d8f2346ee45c
+
+{
+    "username": "abc@gmail.com",
+    "password": "mailman"
+}
