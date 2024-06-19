@@ -37,7 +37,6 @@ services:
       - POSTGRES_PASSWORD=lead_pass
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./backend/init.sql:/docker-entrypoint-initdb.d/init.sql
 
 
 volumes:
