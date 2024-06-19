@@ -7,8 +7,8 @@ pipeline {
         DOCKER_REPO_FRONTEND = 'lead-generation-app-registry/frontend'
         DOCKER_CREDENTIALS_ID = 'do-registry-credentials'
         SSH_CREDENTIALS_ID = 'droplet-ssh-credentials'
-        DROPLET_IP = '46.101.117.169'
-        DROPLET_USER = 'admin'
+        DROPLET_IP = '159.89.4.217'
+        DROPLET_USER = 'root'
         PROJECT_DIR = 'spotify-leads-app'
     }
 

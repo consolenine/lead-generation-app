@@ -1,11 +1,14 @@
 # Use the official Python image from the Docker Hub
-FROM python:3.11
+FROM python:3.11-alpine
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
 # Set the working directory in the container
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirements.txt .
+COPY requirements.txt /app/
 
 # Install the dependencies
 # RUN apt-get update && \
@@ -24,10 +27,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code into the container
-COPY . .
-
-# Set the environment variables for Django
-ENV PYTHONUNBUFFERED 1
+COPY . /app/
 
 # Run Django migrations and start the server
-CMD ["sh", "-c", "python lead_generator/manage.py migrate && python lead_generator/manage.py runserver 0.0.0.0:8000 --environment=prod"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "lead_generator.wsgi:application"]
