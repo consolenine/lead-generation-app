@@ -40,7 +40,7 @@ const LoginForm = () => {
                     if (response.data.user) {
                         const { token, expiry, user } = response.data;
                         setUser(user.username);
-                        Cookies.set('token', token, { expires: new Date(expiry), secure: true, sameSite: 'Strict' });
+                        Cookies.set('token', token, { expires: new Date(expiry), sameSite: 'Lax' });
                     }
 
                     // Redirect to the homepage or dashboard
