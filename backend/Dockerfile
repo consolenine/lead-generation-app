@@ -10,6 +10,8 @@ WORKDIR /app
 # Copy the requirements file into the container
 COPY requirements.txt /app/
 
+RUN apk add --no-cache gcc musl-dev libffi-dev
+
 # Install the dependencies
 # RUN apt-get update && \
 #     apt-get install -y wget unzip && \
@@ -30,4 +32,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/
 
 # Run Django migrations and start the server
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "lead_generator.wsgi:application"]
+CMD ["sh", "-c", "python lead_generator/manage.py migrate && python lead_generator/manage.py runserver 0.0.0.0:8000"]
