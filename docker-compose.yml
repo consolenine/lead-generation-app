@@ -31,14 +31,14 @@ services:
     environment:
       - ENVIRONMENT=prod
 
-  # frontend:
-  #   build:
-  #     context: ./frontend
-  #   container_name: frontend
-  #   ports:
-  #     - "3000:3000"
-  #   volumes:
-  #     - ./frontend:/app  # Mount frontend code into the container
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app  # Mount frontend code into the container
 
 volumes:
   postgres_data:
