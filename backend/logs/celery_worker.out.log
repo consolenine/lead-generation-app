@@ -1,0 +1,315 @@
+ 
+ -------------- celery@1f0c17e33507 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-aarch64-with-glibc2.36 2024-06-23 08:51:07
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0xffffb00b48d0
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     redis://localhost:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@b0e4953dff65 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-aarch64-with-glibc2.36 2024-06-23 08:53:15
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0xffff97504d90
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     redis://localhost:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@7a83bd34e8f7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-aarch64-with-glibc2.36 2024-06-23 08:58:03
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0xffff9fd54850
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     redis://localhost:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@7a83bd34e8f7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-aarch64-with-glibc2.36 2024-06-23 09:01:33
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0xffffb3295510
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@7a83bd34e8f7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-aarch64-with-glibc2.36 2024-06-23 09:03:09
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0xffffa5eb5bd0
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@7a83bd34e8f7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-aarch64-with-glibc2.36 2024-06-23 09:08:26
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0xffff80bde810
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@7a83bd34e8f7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-aarch64-with-glibc2.36 2024-06-23 09:13:18
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0xffffbca5ead0
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@ff16da8a539d v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-aarch64-with-glibc2.36 2024-06-23 09:42:15
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0xffff92c9e4d0
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@464dcc4c864c v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-x86_64-with-glibc2.36 2024-06-23 09:57:41
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0x7ffffd2a8bd0
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@649d77808ff7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-x86_64-with-glibc2.36 2024-06-23 10:07:14
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0x7ffffd2a2550
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@649d77808ff7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-x86_64-with-glibc2.36 2024-06-23 10:17:01
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0x7ffffd2a8b50
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@649d77808ff7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-x86_64-with-glibc2.36 2024-06-23 10:17:38
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0x7ffffd2aa1d0
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@649d77808ff7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-x86_64-with-glibc2.36 2024-06-23 10:20:23
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0x7ffffd2a89d0
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@649d77808ff7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-x86_64-with-glibc2.36 2024-06-23 10:22:34
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0x7ffffd2a8c10
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+
+ 
+ -------------- celery@649d77808ff7 v5.3.6 (emerald-rush)
+--- ***** ----- 
+-- ******* ---- Linux-6.6.12-linuxkit-x86_64-with-glibc2.36 2024-06-23 10:27:00
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         lead_generator:0x7ffffd2a8a90
+- ** ---------- .> transport:   redis://redis:6379//
+- ** ---------- .> results:     redis://redis:6379/
+- *** --- * --- .> concurrency: 8 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . lead_generator.celery.debug_task
+  . scraper.tasks.check_queued_tasks
+  . scraper.tasks.scrape_leads
+

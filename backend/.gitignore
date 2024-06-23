@@ -3,4 +3,4 @@ __pycache__
 docs
 api
 *.zip
-log/*
+logs/*

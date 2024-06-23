@@ -28,3 +28,847 @@
 2024-06-23 08:39:23,937 WARN received SIGTERM indicating exit request
 2024-06-23 08:39:23,942 INFO waiting for django to die
 2024-06-23 08:39:25,950 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 08:42:40,134 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 08:42:40,136 INFO supervisord started with pid 1
+2024-06-23 08:42:41,139 INFO spawned: 'celery_beat' with pid 6
+2024-06-23 08:42:41,145 INFO spawned: 'celery_worker' with pid 7
+2024-06-23 08:42:41,150 INFO spawned: 'django' with pid 8
+2024-06-23 08:42:41,658 WARN exited: celery_beat (exit status 2; not expected)
+2024-06-23 08:42:41,660 WARN exited: celery_worker (exit status 2; not expected)
+2024-06-23 08:42:43,073 INFO spawned: 'celery_beat' with pid 11
+2024-06-23 08:42:43,077 INFO spawned: 'celery_worker' with pid 12
+2024-06-23 08:42:43,079 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:42:43,679 WARN exited: celery_beat (exit status 2; not expected)
+2024-06-23 08:42:43,738 WARN exited: celery_worker (exit status 2; not expected)
+2024-06-23 08:42:46,432 INFO spawned: 'celery_beat' with pid 15
+2024-06-23 08:42:46,439 INFO spawned: 'celery_worker' with pid 16
+2024-06-23 08:42:47,119 WARN exited: celery_beat (exit status 2; not expected)
+2024-06-23 08:42:47,478 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:42:47,506 WARN exited: celery_worker (exit status 2; not expected)
+2024-06-23 08:42:48,511 INFO spawned: 'celery_worker' with pid 17
+2024-06-23 08:42:48,970 WARN exited: celery_worker (exit status 2; not expected)
+2024-06-23 08:42:49,972 INFO spawned: 'celery_worker' with pid 18
+2024-06-23 08:42:49,973 WARN received SIGTERM indicating exit request
+2024-06-23 08:42:49,974 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 08:42:50,633 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 08:42:50,637 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 08:51:04,852 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 08:51:04,853 INFO supervisord started with pid 1
+2024-06-23 08:51:05,860 INFO spawned: 'celery_beat' with pid 7
+2024-06-23 08:51:05,862 INFO spawned: 'celery_worker' with pid 9
+2024-06-23 08:51:05,864 INFO spawned: 'django' with pid 11
+2024-06-23 08:51:07,118 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:51:07,118 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:51:07,118 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:51:50,309 WARN received SIGTERM indicating exit request
+2024-06-23 08:51:50,310 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 08:51:50,312 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 08:51:51,317 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 08:51:52,322 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 08:53:13,353 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 08:53:13,355 INFO supervisord started with pid 1
+2024-06-23 08:53:14,358 INFO spawned: 'celery_beat' with pid 6
+2024-06-23 08:53:14,364 INFO spawned: 'celery_worker' with pid 8
+2024-06-23 08:53:14,366 INFO spawned: 'django' with pid 9
+2024-06-23 08:53:15,449 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:53:15,450 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:53:15,450 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:54:08,377 WARN received SIGTERM indicating exit request
+2024-06-23 08:54:08,378 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 08:54:09,382 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 08:54:10,385 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 08:54:11,389 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 08:58:00,877 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 08:58:00,879 INFO supervisord started with pid 1
+2024-06-23 08:58:01,883 INFO spawned: 'celery_beat' with pid 6
+2024-06-23 08:58:01,886 INFO spawned: 'celery_worker' with pid 8
+2024-06-23 08:58:01,895 INFO spawned: 'django' with pid 10
+2024-06-23 08:58:02,897 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:58:02,898 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:58:02,899 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:01:00,458 WARN received SIGTERM indicating exit request
+2024-06-23 09:01:00,463 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 09:01:01,470 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 09:01:01,477 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 09:01:02,481 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 09:01:31,871 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 09:01:31,872 INFO supervisord started with pid 1
+2024-06-23 09:01:32,882 INFO spawned: 'celery_beat' with pid 7
+2024-06-23 09:01:32,890 INFO spawned: 'celery_worker' with pid 8
+2024-06-23 09:01:32,901 INFO spawned: 'django' with pid 11
+2024-06-23 09:01:33,891 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:01:33,892 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:01:33,892 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:02:59,036 WARN received SIGTERM indicating exit request
+2024-06-23 09:02:59,037 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 09:03:00,043 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 09:03:01,052 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 09:03:02,061 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 09:03:07,226 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 09:03:07,228 INFO supervisord started with pid 1
+2024-06-23 09:03:08,243 INFO spawned: 'celery_beat' with pid 7
+2024-06-23 09:03:08,248 INFO spawned: 'celery_worker' with pid 8
+2024-06-23 09:03:08,253 INFO spawned: 'django' with pid 10
+2024-06-23 09:03:09,507 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:03:09,507 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:03:09,508 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:07:03,173 WARN received SIGTERM indicating exit request
+2024-06-23 09:07:03,174 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 09:07:04,178 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 09:07:05,182 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 09:07:06,188 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 09:08:24,553 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 09:08:24,554 INFO supervisord started with pid 1
+2024-06-23 09:08:25,565 INFO spawned: 'celery_beat' with pid 7
+2024-06-23 09:08:25,571 INFO spawned: 'celery_worker' with pid 8
+2024-06-23 09:08:25,576 INFO spawned: 'django' with pid 10
+2024-06-23 09:08:26,836 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:08:26,837 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:08:26,838 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:13:10,542 WARN received SIGTERM indicating exit request
+2024-06-23 09:13:10,544 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 09:13:11,548 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 09:13:12,552 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 09:13:13,556 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 09:13:16,103 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 09:13:16,105 INFO supervisord started with pid 1
+2024-06-23 09:13:17,111 INFO spawned: 'celery_beat' with pid 7
+2024-06-23 09:13:17,116 INFO spawned: 'celery_worker' with pid 8
+2024-06-23 09:13:17,121 INFO spawned: 'django' with pid 11
+2024-06-23 09:13:18,451 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:13:18,452 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:13:18,452 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:17:02,160 WARN received SIGTERM indicating exit request
+2024-06-23 09:17:02,162 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 09:17:03,165 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 09:17:04,169 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 09:17:05,172 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 09:42:13,580 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 09:42:13,582 INFO supervisord started with pid 1
+2024-06-23 09:42:14,585 INFO spawned: 'celery_beat' with pid 6
+2024-06-23 09:42:14,589 INFO spawned: 'celery_worker' with pid 8
+2024-06-23 09:42:14,591 INFO spawned: 'django' with pid 9
+2024-06-23 09:42:15,654 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:42:15,654 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:42:15,654 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:44:54,720 WARN received SIGTERM indicating exit request
+2024-06-23 09:44:54,722 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 09:44:55,666 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 09:44:55,669 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 09:44:56,675 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 09:57:38,017 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 09:57:38,019 INFO supervisord started with pid 1
+2024-06-23 09:57:39,024 INFO spawned: 'celery_beat' with pid 12
+2024-06-23 09:57:39,026 INFO spawned: 'celery_worker' with pid 13
+2024-06-23 09:57:39,030 INFO spawned: 'django' with pid 19
+2024-06-23 09:57:40,751 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:57:40,756 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:57:40,758 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 09:58:02,659 INFO reaped unknown pid 155 (exit status 0)
+2024-06-23 09:58:02,661 INFO reaped unknown pid 156 (exit status 0)
+2024-06-23 09:58:02,662 INFO reaped unknown pid 233 (exit status 0)
+2024-06-23 09:58:02,662 INFO reaped unknown pid 234 (exit status 0)
+2024-06-23 10:01:52,757 INFO reaped unknown pid 431 (exit status 0)
+2024-06-23 10:01:52,758 INFO reaped unknown pid 432 (exit status 0)
+2024-06-23 10:01:52,759 INFO reaped unknown pid 506 (exit status 0)
+2024-06-23 10:01:52,759 INFO reaped unknown pid 507 (exit status 0)
+2024-06-23 10:02:01,343 INFO reaped unknown pid 541 (exit status 0)
+2024-06-23 10:02:01,344 INFO reaped unknown pid 550 (exit status 0)
+2024-06-23 10:02:01,344 INFO reaped unknown pid 551 (exit status 0)
+2024-06-23 10:02:01,345 INFO reaped unknown pid 576 (exit status 0)
+2024-06-23 10:02:01,345 INFO reaped unknown pid 574 (exit status 0)
+2024-06-23 10:02:01,346 INFO reaped unknown pid 617 (exit status 0)
+2024-06-23 10:05:12,305 INFO reaped unknown pid 699 (exit status 0)
+2024-06-23 10:05:12,306 INFO reaped unknown pid 700 (exit status 0)
+2024-06-23 10:05:12,306 INFO reaped unknown pid 776 (exit status 0)
+2024-06-23 10:05:12,307 INFO reaped unknown pid 777 (exit status 0)
+2024-06-23 10:06:22,856 INFO reaped unknown pid 969 (exit status 0)
+2024-06-23 10:06:22,857 INFO reaped unknown pid 970 (exit status 0)
+2024-06-23 10:06:22,857 INFO reaped unknown pid 1045 (exit status 0)
+2024-06-23 10:06:22,858 INFO reaped unknown pid 1046 (exit status 0)
+2024-06-23 10:06:30,263 INFO reaped unknown pid 1086 (exit status 0)
+2024-06-23 10:06:30,263 INFO reaped unknown pid 1087 (exit status 0)
+2024-06-23 10:06:30,264 INFO reaped unknown pid 1115 (exit status 0)
+2024-06-23 10:06:30,264 INFO reaped unknown pid 1157 (exit status 0)
+2024-06-23 10:06:30,264 INFO reaped unknown pid 1113 (exit status 0)
+2024-06-23 10:06:30,289 INFO reaped unknown pid 1079 (exit status 0)
+2024-06-23 10:07:02,611 WARN received SIGTERM indicating exit request
+2024-06-23 10:07:02,613 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 10:07:03,618 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 10:07:04,623 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 10:07:05,627 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 10:07:11,708 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 10:07:11,712 INFO supervisord started with pid 1
+2024-06-23 10:07:12,719 INFO spawned: 'celery_beat' with pid 12
+2024-06-23 10:07:12,725 INFO spawned: 'celery_worker' with pid 18
+2024-06-23 10:07:12,726 INFO spawned: 'django' with pid 19
+2024-06-23 10:07:14,209 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:07:14,212 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:07:14,212 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:07:26,055 INFO reaped unknown pid 154 (exit status 0)
+2024-06-23 10:07:26,056 INFO reaped unknown pid 155 (exit status 0)
+2024-06-23 10:07:26,057 INFO reaped unknown pid 230 (exit status 0)
+2024-06-23 10:07:26,057 INFO reaped unknown pid 231 (exit status 0)
+2024-06-23 10:07:36,511 INFO reaped unknown pid 265 (exit status 0)
+2024-06-23 10:07:36,511 INFO reaped unknown pid 272 (exit status 0)
+2024-06-23 10:07:36,512 INFO reaped unknown pid 273 (exit status 0)
+2024-06-23 10:07:36,512 INFO reaped unknown pid 301 (exit status 0)
+2024-06-23 10:07:36,512 INFO reaped unknown pid 342 (exit status 0)
+2024-06-23 10:07:36,512 INFO reaped unknown pid 299 (exit status 0)
+2024-06-23 10:09:16,114 INFO reaped unknown pid 425 (exit status 0)
+2024-06-23 10:09:16,115 INFO reaped unknown pid 426 (exit status 0)
+2024-06-23 10:09:16,115 INFO reaped unknown pid 502 (exit status 0)
+2024-06-23 10:09:16,115 INFO reaped unknown pid 503 (exit status 0)
+2024-06-23 10:09:23,521 INFO reaped unknown pid 537 (exit status 0)
+2024-06-23 10:09:23,522 INFO reaped unknown pid 573 (exit status 0)
+2024-06-23 10:09:23,522 INFO reaped unknown pid 614 (exit status 0)
+2024-06-23 10:09:23,522 INFO reaped unknown pid 571 (exit status 0)
+2024-06-23 10:09:23,522 INFO reaped unknown pid 546 (exit status 0)
+2024-06-23 10:09:23,523 INFO reaped unknown pid 547 (exit status 0)
+2024-06-23 10:11:06,087 INFO reaped unknown pid 698 (exit status 0)
+2024-06-23 10:11:06,087 INFO reaped unknown pid 699 (exit status 0)
+2024-06-23 10:11:06,088 INFO reaped unknown pid 773 (exit status 0)
+2024-06-23 10:11:06,088 INFO reaped unknown pid 774 (exit status 0)
+2024-06-23 10:11:13,188 INFO reaped unknown pid 807 (exit status 0)
+2024-06-23 10:11:13,189 INFO reaped unknown pid 841 (exit status 0)
+2024-06-23 10:11:13,189 INFO reaped unknown pid 884 (exit status 0)
+2024-06-23 10:11:13,189 INFO reaped unknown pid 814 (exit status 0)
+2024-06-23 10:11:13,189 INFO reaped unknown pid 816 (exit status 0)
+2024-06-23 10:11:13,189 INFO reaped unknown pid 843 (exit status 0)
+2024-06-23 10:11:35,500 INFO reaped unknown pid 964 (exit status 0)
+2024-06-23 10:11:35,501 INFO reaped unknown pid 965 (exit status 0)
+2024-06-23 10:11:35,501 INFO reaped unknown pid 1040 (exit status 0)
+2024-06-23 10:11:35,501 INFO reaped unknown pid 1041 (exit status 0)
+2024-06-23 10:11:42,627 INFO reaped unknown pid 1075 (exit status 0)
+2024-06-23 10:11:42,628 INFO reaped unknown pid 1082 (exit status 0)
+2024-06-23 10:11:42,628 INFO reaped unknown pid 1085 (exit status 0)
+2024-06-23 10:11:42,628 INFO reaped unknown pid 1111 (exit status 0)
+2024-06-23 10:11:42,628 INFO reaped unknown pid 1152 (exit status 0)
+2024-06-23 10:11:42,628 INFO reaped unknown pid 1109 (exit status 0)
+2024-06-23 10:14:05,829 WARN received SIGTERM indicating exit request
+2024-06-23 10:14:05,831 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 10:14:06,839 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 10:14:07,853 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 10:14:08,858 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 10:16:58,078 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 10:16:58,081 INFO supervisord started with pid 1
+2024-06-23 10:16:59,099 INFO spawned: 'celery_beat' with pid 12
+2024-06-23 10:16:59,107 INFO spawned: 'celery_worker' with pid 13
+2024-06-23 10:16:59,114 INFO spawned: 'django' with pid 19
+2024-06-23 10:17:00,736 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:17:00,736 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:17:00,737 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:17:30,364 WARN received SIGTERM indicating exit request
+2024-06-23 10:17:30,365 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 10:17:31,305 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 10:17:31,310 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 10:17:31,312 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 10:17:35,947 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 10:17:35,949 INFO supervisord started with pid 1
+2024-06-23 10:17:36,968 INFO spawned: 'celery_beat' with pid 12
+2024-06-23 10:17:36,975 INFO spawned: 'celery_worker' with pid 13
+2024-06-23 10:17:36,983 INFO spawned: 'django' with pid 19
+2024-06-23 10:17:38,155 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:17:38,157 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:17:38,158 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:17:49,818 INFO reaped unknown pid 148 (exit status 0)
+2024-06-23 10:17:49,818 INFO reaped unknown pid 149 (exit status 0)
+2024-06-23 10:17:49,818 INFO reaped unknown pid 224 (exit status 0)
+2024-06-23 10:17:49,818 INFO reaped unknown pid 225 (exit status 0)
+2024-06-23 10:17:57,280 INFO reaped unknown pid 257 (exit status 0)
+2024-06-23 10:17:57,281 INFO reaped unknown pid 293 (exit status 0)
+2024-06-23 10:17:57,282 INFO reaped unknown pid 266 (exit status 0)
+2024-06-23 10:17:57,282 INFO reaped unknown pid 267 (exit status 0)
+2024-06-23 10:17:57,282 INFO reaped unknown pid 291 (exit status 0)
+2024-06-23 10:17:57,283 INFO reaped unknown pid 334 (exit status 0)
+2024-06-23 10:19:45,469 WARN received SIGTERM indicating exit request
+2024-06-23 10:19:45,469 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 10:19:45,470 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 10:19:46,473 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 10:19:47,476 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 10:20:21,081 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 10:20:21,084 INFO supervisord started with pid 1
+2024-06-23 10:20:22,103 INFO spawned: 'celery_beat' with pid 12
+2024-06-23 10:20:22,112 INFO spawned: 'celery_worker' with pid 13
+2024-06-23 10:20:22,119 INFO spawned: 'django' with pid 19
+2024-06-23 10:20:23,260 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:20:23,261 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:20:23,264 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:20:44,683 INFO reaped unknown pid 150 (exit status 0)
+2024-06-23 10:20:44,683 INFO reaped unknown pid 151 (exit status 0)
+2024-06-23 10:20:44,683 INFO reaped unknown pid 226 (exit status 0)
+2024-06-23 10:20:44,683 INFO reaped unknown pid 227 (exit status 0)
+2024-06-23 10:22:21,951 WARN received SIGTERM indicating exit request
+2024-06-23 10:22:21,952 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 10:22:22,960 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 10:22:23,916 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 10:22:24,919 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 10:22:31,459 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 10:22:31,461 INFO supervisord started with pid 1
+2024-06-23 10:22:32,472 INFO spawned: 'celery_beat' with pid 12
+2024-06-23 10:22:32,478 INFO spawned: 'celery_worker' with pid 13
+2024-06-23 10:22:32,486 INFO spawned: 'django' with pid 19
+2024-06-23 10:22:33,646 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:22:33,653 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:22:33,657 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:22:36,487 INFO reaped unknown pid 148 (exit status 0)
+2024-06-23 10:22:36,488 INFO reaped unknown pid 149 (exit status 0)
+2024-06-23 10:22:36,488 INFO reaped unknown pid 225 (exit status 0)
+2024-06-23 10:22:36,488 INFO reaped unknown pid 226 (exit status 0)
+2024-06-23 10:22:43,620 INFO reaped unknown pid 260 (exit status 0)
+2024-06-23 10:22:43,620 INFO reaped unknown pid 267 (exit status 0)
+2024-06-23 10:22:43,621 INFO reaped unknown pid 268 (exit status 0)
+2024-06-23 10:22:43,621 INFO reaped unknown pid 295 (exit status 0)
+2024-06-23 10:22:43,621 INFO reaped unknown pid 335 (exit status 0)
+2024-06-23 10:22:43,621 INFO reaped unknown pid 293 (exit status 0)
+2024-06-23 10:26:42,798 WARN received SIGTERM indicating exit request
+2024-06-23 10:26:42,799 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 10:26:43,804 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 10:26:44,289 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 10:26:45,294 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 10:26:57,413 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 10:26:57,415 INFO supervisord started with pid 1
+2024-06-23 10:26:58,432 INFO spawned: 'celery_beat' with pid 11
+2024-06-23 10:26:58,438 INFO spawned: 'celery_worker' with pid 12
+2024-06-23 10:26:58,444 INFO spawned: 'django' with pid 18
+2024-06-23 10:26:59,622 INFO success: celery_beat entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:26:59,631 INFO success: celery_worker entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:26:59,642 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 10:30:31,103 INFO reaped unknown pid 151 (exit status 0)
+2024-06-23 10:30:31,103 INFO reaped unknown pid 152 (exit status 0)
+2024-06-23 10:30:31,103 INFO reaped unknown pid 227 (exit status 0)
+2024-06-23 10:30:31,103 INFO reaped unknown pid 228 (exit status 0)
+2024-06-23 10:30:38,573 INFO reaped unknown pid 261 (exit status 0)
+2024-06-23 10:30:38,574 INFO reaped unknown pid 268 (exit status 0)
+2024-06-23 10:30:38,574 INFO reaped unknown pid 269 (exit status 0)
+2024-06-23 10:30:38,574 INFO reaped unknown pid 297 (exit status 0)
+2024-06-23 10:30:38,575 INFO reaped unknown pid 295 (exit status 0)
+2024-06-23 10:30:38,575 INFO reaped unknown pid 338 (exit status 0)
+2024-06-23 10:45:14,416 WARN received SIGTERM indicating exit request
+2024-06-23 10:45:14,419 INFO waiting for celery_beat, celery_worker, django to die
+2024-06-23 10:45:15,422 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 10:45:16,431 WARN stopped: celery_worker (terminated by SIGTERM)
+2024-06-23 10:45:17,437 WARN stopped: celery_beat (terminated by SIGTERM)
+2024-06-23 11:04:58,066 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:04:58,069 INFO supervisord started with pid 1
+2024-06-23 11:04:59,089 INFO spawned: 'django' with pid 24
+2024-06-23 11:04:59,096 INFO spawned: 'lead_generator' with pid 25
+2024-06-23 11:05:00,099 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:05:00,100 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:05:00,326 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:05:00,668 INFO spawned: 'lead_generator' with pid 55
+2024-06-23 11:05:01,667 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:05:02,671 INFO spawned: 'lead_generator' with pid 86
+2024-06-23 11:05:03,568 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:05:05,581 INFO spawned: 'lead_generator' with pid 107
+2024-06-23 11:05:06,487 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:05:09,503 INFO spawned: 'lead_generator' with pid 126
+2024-06-23 11:05:10,425 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:05:11,428 INFO gave up: lead_generator entered FATAL state, too many start retries too quickly
+2024-06-23 11:05:15,441 WARN received SIGTERM indicating exit request
+2024-06-23 11:05:15,441 INFO waiting for django to die
+2024-06-23 11:05:17,450 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:13:51,489 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:13:51,491 INFO supervisord started with pid 1
+2024-06-23 11:13:52,504 INFO spawned: 'django' with pid 22
+2024-06-23 11:13:52,509 INFO spawned: 'lead_generator' with pid 23
+2024-06-23 11:13:53,515 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:13:53,516 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:13:53,838 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:13:54,842 INFO spawned: 'lead_generator' with pid 57
+2024-06-23 11:13:55,860 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:13:55,958 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:13:56,964 INFO spawned: 'lead_generator' with pid 70
+2024-06-23 11:13:58,014 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:13:58,014 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:13:59,027 INFO spawned: 'lead_generator' with pid 82
+2024-06-23 11:14:00,031 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:14:00,031 WARN received SIGTERM indicating exit request
+2024-06-23 11:14:00,032 INFO waiting for django, lead_generator to die
+2024-06-23 11:14:00,047 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 11:14:01,051 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:14:01,052 INFO reaped unknown pid 88 (exit status 1)
+2024-06-23 11:15:48,093 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:15:48,095 INFO supervisord started with pid 1
+2024-06-23 11:15:49,107 INFO spawned: 'django' with pid 22
+2024-06-23 11:15:49,113 INFO spawned: 'lead_generator' with pid 23
+2024-06-23 11:15:50,122 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:15:50,122 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:15:50,961 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:15:51,966 INFO spawned: 'lead_generator' with pid 65
+2024-06-23 11:15:53,409 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:15:53,640 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:15:54,653 INFO spawned: 'lead_generator' with pid 85
+2024-06-23 11:15:55,658 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:15:55,658 WARN received SIGTERM indicating exit request
+2024-06-23 11:15:55,659 INFO waiting for django, lead_generator to die
+2024-06-23 11:15:56,215 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 11:15:57,219 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:15:57,220 INFO reaped unknown pid 91 (exit status 1)
+2024-06-23 11:17:38,139 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:17:38,141 INFO supervisord started with pid 1
+2024-06-23 11:17:39,155 INFO spawned: 'django' with pid 22
+2024-06-23 11:17:39,160 INFO spawned: 'lead_generator' with pid 23
+2024-06-23 11:17:40,164 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:17:40,165 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:17:40,823 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:17:41,825 INFO spawned: 'lead_generator' with pid 65
+2024-06-23 11:17:43,274 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:17:43,400 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:17:44,407 INFO spawned: 'lead_generator' with pid 85
+2024-06-23 11:17:45,412 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:17:45,985 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:17:46,995 INFO spawned: 'lead_generator' with pid 104
+2024-06-23 11:17:47,998 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:17:48,570 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:17:49,579 INFO spawned: 'lead_generator' with pid 123
+2024-06-23 11:17:50,582 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:17:51,145 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:17:52,154 INFO spawned: 'lead_generator' with pid 142
+2024-06-23 11:17:53,158 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:17:53,744 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:17:54,752 INFO spawned: 'lead_generator' with pid 161
+2024-06-23 11:17:55,756 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:17:56,315 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:17:57,323 INFO spawned: 'lead_generator' with pid 180
+2024-06-23 11:17:58,328 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:17:58,790 WARN received SIGTERM indicating exit request
+2024-06-23 11:17:58,790 INFO waiting for django, lead_generator to die
+2024-06-23 11:17:58,791 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 11:17:59,794 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:17:59,795 INFO reaped unknown pid 186 (exit status 1)
+2024-06-23 11:21:31,578 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:21:31,581 INFO supervisord started with pid 1
+2024-06-23 11:21:32,598 INFO spawned: 'django' with pid 22
+2024-06-23 11:21:32,603 INFO spawned: 'lead_generator' with pid 23
+2024-06-23 11:21:33,608 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:21:33,609 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:21:34,556 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:21:35,560 INFO spawned: 'lead_generator' with pid 64
+2024-06-23 11:21:37,104 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:21:37,288 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:21:38,296 INFO spawned: 'lead_generator' with pid 84
+2024-06-23 11:21:39,300 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:21:39,916 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:21:40,925 INFO spawned: 'lead_generator' with pid 103
+2024-06-23 11:21:41,927 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:21:42,513 WARN received SIGTERM indicating exit request
+2024-06-23 11:21:42,513 INFO waiting for django, lead_generator to die
+2024-06-23 11:21:43,515 WARN stopped: lead_generator (exit status 1)
+2024-06-23 11:21:44,520 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:22:10,141 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:22:10,143 INFO supervisord started with pid 1
+2024-06-23 11:22:11,161 INFO spawned: 'django' with pid 23
+2024-06-23 11:22:11,166 INFO spawned: 'lead_generator' with pid 24
+2024-06-23 11:22:12,171 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:22:12,171 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:22:12,862 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:22:13,866 INFO spawned: 'lead_generator' with pid 65
+2024-06-23 11:22:15,326 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:22:15,457 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:22:16,491 INFO spawned: 'lead_generator' with pid 84
+2024-06-23 11:22:17,504 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:22:18,162 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:22:19,170 INFO spawned: 'lead_generator' with pid 103
+2024-06-23 11:22:20,173 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:22:20,849 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:22:21,856 INFO spawned: 'lead_generator' with pid 122
+2024-06-23 11:22:21,858 WARN received SIGTERM indicating exit request
+2024-06-23 11:22:21,860 INFO waiting for django, lead_generator to die
+2024-06-23 11:22:23,579 WARN stopped: lead_generator (exit status 1)
+2024-06-23 11:22:24,582 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:22:46,813 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:22:46,816 INFO supervisord started with pid 1
+2024-06-23 11:22:47,827 INFO spawned: 'django' with pid 22
+2024-06-23 11:22:47,833 INFO spawned: 'lead_generator' with pid 23
+2024-06-23 11:22:48,838 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:22:48,838 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:22:50,531 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:22:50,973 INFO spawned: 'lead_generator' with pid 66
+2024-06-23 11:22:52,121 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:22:53,569 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:22:54,578 INFO spawned: 'lead_generator' with pid 85
+2024-06-23 11:22:55,580 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:22:56,229 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:22:57,238 INFO spawned: 'lead_generator' with pid 104
+2024-06-23 11:22:58,243 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:22:58,244 WARN received SIGTERM indicating exit request
+2024-06-23 11:22:58,245 INFO waiting for django, lead_generator to die
+2024-06-23 11:22:58,832 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 11:22:59,835 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:22:59,836 INFO reaped unknown pid 110 (exit status 1)
+2024-06-23 11:24:51,294 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:24:51,296 INFO supervisord started with pid 1
+2024-06-23 11:24:52,315 INFO spawned: 'django' with pid 22
+2024-06-23 11:24:52,320 INFO spawned: 'lead_generator' with pid 23
+2024-06-23 11:24:53,328 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:24:53,329 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:24:54,005 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:24:55,010 INFO spawned: 'lead_generator' with pid 64
+2024-06-23 11:24:56,529 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:24:56,668 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:24:57,673 INFO spawned: 'lead_generator' with pid 84
+2024-06-23 11:24:58,679 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:24:58,685 WARN received SIGTERM indicating exit request
+2024-06-23 11:24:58,705 INFO waiting for django, lead_generator to die
+2024-06-23 11:24:59,204 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 11:25:00,207 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:25:00,209 INFO reaped unknown pid 90 (exit status 1)
+2024-06-23 11:25:43,653 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:25:43,655 INFO supervisord started with pid 1
+2024-06-23 11:25:44,667 INFO spawned: 'django' with pid 23
+2024-06-23 11:25:44,671 INFO spawned: 'lead_generator' with pid 24
+2024-06-23 11:25:45,675 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:25:45,676 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:26:56,597 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:26:57,604 INFO spawned: 'lead_generator' with pid 68
+2024-06-23 11:26:58,606 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:27:00,273 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:27:01,288 INFO spawned: 'lead_generator' with pid 88
+2024-06-23 11:27:02,291 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:27:03,036 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:27:04,043 INFO spawned: 'lead_generator' with pid 108
+2024-06-23 11:27:05,047 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:27:05,815 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:27:06,823 INFO spawned: 'lead_generator' with pid 128
+2024-06-23 11:27:07,826 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:27:08,494 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:27:09,503 INFO spawned: 'lead_generator' with pid 148
+2024-06-23 11:27:10,507 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:27:11,184 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:27:12,191 INFO spawned: 'lead_generator' with pid 168
+2024-06-23 11:27:13,195 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:27:13,862 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 11:27:13,862 WARN received SIGTERM indicating exit request
+2024-06-23 11:27:13,863 INFO waiting for django to die
+2024-06-23 11:27:15,869 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:31:15,598 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:31:15,600 INFO supervisord started with pid 1
+2024-06-23 11:31:16,616 INFO spawned: 'django' with pid 22
+2024-06-23 11:31:16,621 INFO spawned: 'lead_generator' with pid 23
+2024-06-23 11:31:17,627 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:31:17,628 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:31:19,296 INFO reaped unknown pid 118 (exit status 0)
+2024-06-23 11:31:19,297 INFO reaped unknown pid 119 (exit status 0)
+2024-06-23 11:31:19,297 INFO reaped unknown pid 200 (exit status 0)
+2024-06-23 11:31:19,297 INFO reaped unknown pid 201 (exit status 0)
+2024-06-23 11:31:27,542 INFO reaped unknown pid 233 (exit status 0)
+2024-06-23 11:31:27,542 INFO reaped unknown pid 269 (exit status 0)
+2024-06-23 11:31:27,543 INFO reaped unknown pid 242 (exit status 0)
+2024-06-23 11:31:27,544 INFO reaped unknown pid 244 (exit status 0)
+2024-06-23 11:31:27,544 INFO reaped unknown pid 309 (exit status 0)
+2024-06-23 11:31:27,545 INFO reaped unknown pid 267 (exit status 0)
+2024-06-23 11:38:37,207 WARN received SIGTERM indicating exit request
+2024-06-23 11:38:37,209 INFO waiting for django, lead_generator to die
+2024-06-23 11:38:38,213 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 11:38:39,219 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:39:01,083 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:39:01,085 INFO supervisord started with pid 1
+2024-06-23 11:39:02,101 INFO spawned: 'django' with pid 11
+2024-06-23 11:39:02,107 INFO spawned: 'lead_generator' with pid 12
+2024-06-23 11:39:03,114 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:39:03,114 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:39:14,744 INFO reaped unknown pid 115 (exit status 0)
+2024-06-23 11:39:14,745 INFO reaped unknown pid 116 (exit status 0)
+2024-06-23 11:39:14,745 INFO reaped unknown pid 192 (exit status 0)
+2024-06-23 11:39:14,745 INFO reaped unknown pid 193 (exit status 0)
+2024-06-23 11:39:21,760 INFO reaped unknown pid 227 (exit status 0)
+2024-06-23 11:39:21,761 INFO reaped unknown pid 234 (exit status 0)
+2024-06-23 11:39:21,761 INFO reaped unknown pid 236 (exit status 0)
+2024-06-23 11:39:21,761 INFO reaped unknown pid 263 (exit status 0)
+2024-06-23 11:39:21,761 INFO reaped unknown pid 261 (exit status 0)
+2024-06-23 11:39:21,762 INFO reaped unknown pid 303 (exit status 0)
+2024-06-23 11:40:39,654 WARN received SIGTERM indicating exit request
+2024-06-23 11:40:39,654 INFO waiting for django, lead_generator to die
+2024-06-23 11:40:40,655 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 11:40:41,659 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:53:28,125 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:53:28,127 INFO supervisord started with pid 1
+2024-06-23 11:53:29,142 INFO spawned: 'django' with pid 12
+2024-06-23 11:53:29,148 INFO spawned: 'lead_generator' with pid 13
+2024-06-23 11:53:30,152 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:53:30,152 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:53:31,133 WARN received SIGTERM indicating exit request
+2024-06-23 11:53:31,134 INFO waiting for django, lead_generator to die
+2024-06-23 11:53:32,136 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 11:53:32,653 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:54:26,384 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:54:26,386 INFO supervisord started with pid 1
+2024-06-23 11:54:27,404 INFO spawned: 'django' with pid 11
+2024-06-23 11:54:28,408 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 11:55:14,552 INFO reaped unknown pid 126 (exit status 0)
+2024-06-23 11:55:14,554 INFO reaped unknown pid 127 (exit status 0)
+2024-06-23 11:55:14,554 INFO reaped unknown pid 202 (exit status 0)
+2024-06-23 11:55:14,554 INFO reaped unknown pid 203 (exit status 0)
+2024-06-23 11:55:23,578 INFO reaped unknown pid 236 (exit status 0)
+2024-06-23 11:55:23,581 INFO reaped unknown pid 272 (exit status 0)
+2024-06-23 11:55:23,582 INFO reaped unknown pid 245 (exit status 0)
+2024-06-23 11:55:23,582 INFO reaped unknown pid 246 (exit status 0)
+2024-06-23 11:55:23,583 INFO reaped unknown pid 313 (exit status 0)
+2024-06-23 11:55:23,584 INFO reaped unknown pid 270 (exit status 0)
+2024-06-23 11:57:14,960 INFO reaped unknown pid 409 (exit status 0)
+2024-06-23 11:57:14,962 INFO reaped unknown pid 410 (exit status 0)
+2024-06-23 11:57:14,963 INFO reaped unknown pid 487 (exit status 0)
+2024-06-23 11:57:14,963 INFO reaped unknown pid 488 (exit status 0)
+2024-06-23 11:58:23,157 INFO reaped unknown pid 522 (exit status 0)
+2024-06-23 11:58:23,158 INFO reaped unknown pid 515 (exit status 130)
+2024-06-23 11:58:23,158 INFO reaped unknown pid 529 (exit status 0)
+2024-06-23 11:58:23,158 INFO reaped unknown pid 532 (exit status 0)
+2024-06-23 11:59:10,324 INFO reaped unknown pid 708 (exit status 0)
+2024-06-23 11:59:10,325 INFO reaped unknown pid 709 (exit status 0)
+2024-06-23 11:59:10,325 INFO reaped unknown pid 783 (exit status 0)
+2024-06-23 11:59:10,326 INFO reaped unknown pid 784 (exit status 0)
+2024-06-23 11:59:42,386 WARN received SIGTERM indicating exit request
+2024-06-23 11:59:42,386 INFO waiting for django to die
+2024-06-23 11:59:43,390 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 11:59:45,674 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 11:59:45,676 INFO supervisord started with pid 1
+2024-06-23 11:59:46,689 INFO spawned: 'django' with pid 23
+2024-06-23 11:59:47,693 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:00:12,898 INFO reaped unknown pid 127 (exit status 0)
+2024-06-23 12:00:12,898 INFO reaped unknown pid 128 (exit status 0)
+2024-06-23 12:00:12,898 INFO reaped unknown pid 204 (exit status 0)
+2024-06-23 12:00:12,898 INFO reaped unknown pid 205 (exit status 0)
+2024-06-23 12:02:58,315 INFO reaped unknown pid 237 (exit status 0)
+2024-06-23 12:02:58,316 INFO reaped unknown pid 230 (exit status 130)
+2024-06-23 12:02:58,316 INFO reaped unknown pid 244 (exit status 0)
+2024-06-23 12:02:58,316 INFO reaped unknown pid 247 (exit status 0)
+2024-06-23 12:03:49,492 INFO reaped unknown pid 411 (exit status 0)
+2024-06-23 12:03:49,493 INFO reaped unknown pid 412 (exit status 0)
+2024-06-23 12:03:49,493 INFO reaped unknown pid 486 (exit status 0)
+2024-06-23 12:03:49,493 INFO reaped unknown pid 487 (exit status 0)
+2024-06-23 12:03:58,514 INFO reaped unknown pid 520 (exit status 0)
+2024-06-23 12:03:58,514 INFO reaped unknown pid 527 (exit status 0)
+2024-06-23 12:03:58,514 INFO reaped unknown pid 529 (exit status 0)
+2024-06-23 12:03:58,515 INFO reaped unknown pid 556 (exit status 0)
+2024-06-23 12:03:58,515 INFO reaped unknown pid 597 (exit status 0)
+2024-06-23 12:03:58,515 INFO reaped unknown pid 554 (exit status 0)
+2024-06-23 12:11:57,209 WARN received SIGTERM indicating exit request
+2024-06-23 12:11:57,211 INFO waiting for django to die
+2024-06-23 12:11:58,216 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 12:12:04,103 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 12:12:04,105 INFO supervisord started with pid 1
+2024-06-23 12:12:05,118 INFO spawned: 'django' with pid 23
+2024-06-23 12:12:05,123 INFO spawned: 'lead_generator' with pid 24
+2024-06-23 12:12:06,130 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:12:06,130 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:12:07,727 INFO reaped unknown pid 119 (exit status 0)
+2024-06-23 12:12:07,727 INFO reaped unknown pid 120 (exit status 0)
+2024-06-23 12:12:07,727 INFO reaped unknown pid 195 (exit status 0)
+2024-06-23 12:12:07,727 INFO reaped unknown pid 196 (exit status 0)
+2024-06-23 12:12:16,183 INFO reaped unknown pid 234 (exit status 0)
+2024-06-23 12:12:16,183 INFO reaped unknown pid 268 (exit status 0)
+2024-06-23 12:12:16,184 INFO reaped unknown pid 312 (exit status 0)
+2024-06-23 12:12:16,185 INFO reaped unknown pid 270 (exit status 0)
+2024-06-23 12:12:16,185 INFO reaped unknown pid 241 (exit status 0)
+2024-06-23 12:12:16,186 INFO reaped unknown pid 243 (exit status 0)
+2024-06-23 12:12:45,467 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:12:46,473 INFO spawned: 'lead_generator' with pid 334
+2024-06-23 12:12:47,475 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:16:19,420 INFO reaped unknown pid 414 (exit status 0)
+2024-06-23 12:16:19,421 INFO reaped unknown pid 415 (exit status 0)
+2024-06-23 12:16:19,421 INFO reaped unknown pid 491 (exit status 0)
+2024-06-23 12:16:19,421 INFO reaped unknown pid 492 (exit status 0)
+2024-06-23 12:16:26,488 INFO reaped unknown pid 525 (exit status 0)
+2024-06-23 12:16:26,488 INFO reaped unknown pid 561 (exit status 0)
+2024-06-23 12:16:26,488 INFO reaped unknown pid 532 (exit status 0)
+2024-06-23 12:16:26,488 INFO reaped unknown pid 533 (exit status 0)
+2024-06-23 12:16:26,489 INFO reaped unknown pid 601 (exit status 0)
+2024-06-23 12:16:26,489 INFO reaped unknown pid 559 (exit status 0)
+2024-06-23 12:16:52,401 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:16:53,412 INFO spawned: 'lead_generator' with pid 624
+2024-06-23 12:16:54,415 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:16:56,065 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:16:57,075 INFO spawned: 'lead_generator' with pid 643
+2024-06-23 12:16:58,077 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:16:59,702 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:00,714 INFO spawned: 'lead_generator' with pid 662
+2024-06-23 12:17:01,719 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:03,311 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:04,318 INFO spawned: 'lead_generator' with pid 681
+2024-06-23 12:17:05,320 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:05,962 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:06,973 INFO spawned: 'lead_generator' with pid 700
+2024-06-23 12:17:07,976 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:09,558 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:10,567 INFO spawned: 'lead_generator' with pid 719
+2024-06-23 12:17:11,569 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:12,319 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:13,327 INFO spawned: 'lead_generator' with pid 738
+2024-06-23 12:17:14,334 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:15,000 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:16,007 INFO spawned: 'lead_generator' with pid 757
+2024-06-23 12:17:17,010 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:17,766 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:18,773 INFO spawned: 'lead_generator' with pid 776
+2024-06-23 12:17:19,777 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:20,513 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:21,519 INFO spawned: 'lead_generator' with pid 795
+2024-06-23 12:17:22,522 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:23,446 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:24,457 INFO spawned: 'lead_generator' with pid 814
+2024-06-23 12:17:25,464 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:26,125 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:27,135 INFO spawned: 'lead_generator' with pid 833
+2024-06-23 12:17:28,139 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:28,791 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:29,804 INFO spawned: 'lead_generator' with pid 852
+2024-06-23 12:17:30,808 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:31,480 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:32,490 INFO spawned: 'lead_generator' with pid 871
+2024-06-23 12:17:33,494 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:34,077 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:35,086 INFO spawned: 'lead_generator' with pid 890
+2024-06-23 12:17:36,094 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:36,735 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:37,745 INFO spawned: 'lead_generator' with pid 909
+2024-06-23 12:17:38,750 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:39,561 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:40,568 INFO spawned: 'lead_generator' with pid 928
+2024-06-23 12:17:41,571 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:42,206 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:43,221 INFO spawned: 'lead_generator' with pid 947
+2024-06-23 12:17:44,234 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:44,870 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:45,876 INFO spawned: 'lead_generator' with pid 966
+2024-06-23 12:17:46,878 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:48,470 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:49,479 INFO spawned: 'lead_generator' with pid 985
+2024-06-23 12:17:50,482 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:51,220 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:52,229 INFO spawned: 'lead_generator' with pid 1004
+2024-06-23 12:17:53,234 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:53,875 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:54,888 INFO spawned: 'lead_generator' with pid 1023
+2024-06-23 12:17:55,895 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:56,531 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:17:57,536 INFO spawned: 'lead_generator' with pid 1042
+2024-06-23 12:17:58,541 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:17:59,197 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:18:00,208 INFO spawned: 'lead_generator' with pid 1061
+2024-06-23 12:18:01,212 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:18:01,850 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:18:02,859 INFO spawned: 'lead_generator' with pid 1080
+2024-06-23 12:18:03,863 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:18:04,522 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:18:05,530 INFO spawned: 'lead_generator' with pid 1099
+2024-06-23 12:18:06,535 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:18:07,134 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:18:08,144 INFO spawned: 'lead_generator' with pid 1118
+2024-06-23 12:18:09,147 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:18:10,740 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:18:11,748 INFO spawned: 'lead_generator' with pid 1137
+2024-06-23 12:18:12,759 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:18:13,441 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:18:14,448 INFO spawned: 'lead_generator' with pid 1156
+2024-06-23 12:18:15,450 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:18:15,907 WARN received SIGTERM indicating exit request
+2024-06-23 12:18:15,908 INFO waiting for django, lead_generator to die
+2024-06-23 12:18:15,908 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 12:18:16,911 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 12:18:16,911 INFO reaped unknown pid 1162 (exit status 1)
+2024-06-23 12:21:37,158 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 12:21:37,161 INFO supervisord started with pid 1
+2024-06-23 12:21:38,173 INFO spawned: 'django' with pid 23
+2024-06-23 12:21:38,178 INFO spawned: 'lead_generator' with pid 24
+2024-06-23 12:21:39,183 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:21:39,183 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:21:50,897 INFO reaped unknown pid 128 (exit status 0)
+2024-06-23 12:21:50,897 INFO reaped unknown pid 129 (exit status 0)
+2024-06-23 12:21:50,898 INFO reaped unknown pid 205 (exit status 0)
+2024-06-23 12:21:50,898 INFO reaped unknown pid 206 (exit status 0)
+2024-06-23 12:21:57,912 INFO reaped unknown pid 239 (exit status 0)
+2024-06-23 12:21:57,913 INFO reaped unknown pid 246 (exit status 0)
+2024-06-23 12:21:57,913 INFO reaped unknown pid 248 (exit status 0)
+2024-06-23 12:21:57,913 INFO reaped unknown pid 274 (exit status 0)
+2024-06-23 12:21:57,913 INFO reaped unknown pid 315 (exit status 0)
+2024-06-23 12:21:57,913 INFO reaped unknown pid 272 (exit status 0)
+2024-06-23 12:23:33,026 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:23:34,039 INFO spawned: 'lead_generator' with pid 338
+2024-06-23 12:23:35,044 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:24:36,814 INFO reaped unknown pid 418 (exit status 0)
+2024-06-23 12:24:36,815 INFO reaped unknown pid 419 (exit status 0)
+2024-06-23 12:24:37,817 INFO reaped unknown pid 494 (exit status 0)
+2024-06-23 12:24:37,817 INFO reaped unknown pid 495 (exit status 0)
+2024-06-23 12:24:44,831 INFO reaped unknown pid 528 (exit status 0)
+2024-06-23 12:24:44,832 INFO reaped unknown pid 564 (exit status 0)
+2024-06-23 12:24:44,833 INFO reaped unknown pid 535 (exit status 0)
+2024-06-23 12:24:44,834 INFO reaped unknown pid 536 (exit status 0)
+2024-06-23 12:24:44,834 INFO reaped unknown pid 605 (exit status 0)
+2024-06-23 12:24:44,835 INFO reaped unknown pid 562 (exit status 0)
+2024-06-23 12:26:21,404 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:26:22,416 INFO spawned: 'lead_generator' with pid 633
+2024-06-23 12:26:23,422 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:28:15,335 INFO reaped unknown pid 713 (exit status 0)
+2024-06-23 12:28:15,337 INFO reaped unknown pid 714 (exit status 0)
+2024-06-23 12:28:15,338 INFO reaped unknown pid 788 (exit status 0)
+2024-06-23 12:28:15,338 INFO reaped unknown pid 789 (exit status 0)
+2024-06-23 12:28:22,900 INFO reaped unknown pid 822 (exit status 0)
+2024-06-23 12:28:22,900 INFO reaped unknown pid 829 (exit status 0)
+2024-06-23 12:28:22,900 INFO reaped unknown pid 832 (exit status 0)
+2024-06-23 12:28:22,901 INFO reaped unknown pid 857 (exit status 0)
+2024-06-23 12:28:22,901 INFO reaped unknown pid 898 (exit status 0)
+2024-06-23 12:28:22,901 INFO reaped unknown pid 855 (exit status 0)
+2024-06-23 12:28:49,960 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:28:50,966 INFO spawned: 'lead_generator' with pid 919
+2024-06-23 12:28:51,968 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:30:17,757 WARN received SIGTERM indicating exit request
+2024-06-23 12:30:17,759 INFO waiting for django, lead_generator to die
+2024-06-23 12:30:18,764 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 12:30:19,770 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 12:30:24,814 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 12:30:24,816 INFO supervisord started with pid 1
+2024-06-23 12:30:25,832 INFO spawned: 'django' with pid 22
+2024-06-23 12:30:25,837 INFO spawned: 'lead_generator' with pid 23
+2024-06-23 12:30:26,842 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:30:26,843 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:30:38,502 INFO reaped unknown pid 127 (exit status 0)
+2024-06-23 12:30:38,503 INFO reaped unknown pid 128 (exit status 0)
+2024-06-23 12:30:39,506 INFO reaped unknown pid 203 (exit status 0)
+2024-06-23 12:30:39,506 INFO reaped unknown pid 204 (exit status 0)
+2024-06-23 12:30:46,119 INFO reaped unknown pid 238 (exit status 0)
+2024-06-23 12:30:46,119 INFO reaped unknown pid 315 (exit status 0)
+2024-06-23 12:30:46,120 INFO reaped unknown pid 245 (exit status 0)
+2024-06-23 12:30:46,120 INFO reaped unknown pid 246 (exit status 0)
+2024-06-23 12:30:46,121 INFO reaped unknown pid 274 (exit status 0)
+2024-06-23 12:30:46,121 INFO reaped unknown pid 272 (exit status 0)
+2024-06-23 12:31:10,120 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:31:11,128 INFO spawned: 'lead_generator' with pid 338
+2024-06-23 12:31:12,130 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:33:13,913 INFO reaped unknown pid 418 (exit status 0)
+2024-06-23 12:33:13,914 INFO reaped unknown pid 419 (exit status 0)
+2024-06-23 12:33:14,918 INFO reaped unknown pid 495 (exit status 0)
+2024-06-23 12:33:14,918 INFO reaped unknown pid 496 (exit status 0)
+2024-06-23 12:33:20,928 INFO reaped unknown pid 537 (exit status 0)
+2024-06-23 12:33:20,928 INFO reaped unknown pid 538 (exit status 0)
+2024-06-23 12:33:20,929 INFO reaped unknown pid 563 (exit status 0)
+2024-06-23 12:33:21,346 INFO reaped unknown pid 530 (exit status 0)
+2024-06-23 12:33:21,347 INFO reaped unknown pid 565 (exit status 0)
+2024-06-23 12:33:21,348 INFO reaped unknown pid 606 (exit status 0)
+2024-06-23 12:34:56,986 WARN exited: lead_generator (exit status 1; not expected)
+2024-06-23 12:34:57,996 INFO spawned: 'lead_generator' with pid 628
+2024-06-23 12:34:59,000 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:35:22,563 WARN received SIGTERM indicating exit request
+2024-06-23 12:35:22,563 INFO waiting for django, lead_generator to die
+2024-06-23 12:35:23,567 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 12:35:24,573 WARN stopped: django (terminated by SIGTERM)
+2024-06-23 12:35:29,536 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 12:35:29,538 INFO supervisord started with pid 1
+2024-06-23 12:35:30,554 INFO spawned: 'django' with pid 22
+2024-06-23 12:35:30,559 INFO spawned: 'lead_generator' with pid 23
+2024-06-23 12:35:31,563 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:35:31,564 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:35:43,334 INFO reaped unknown pid 127 (exit status 0)
+2024-06-23 12:35:43,342 INFO reaped unknown pid 128 (exit status 0)
+2024-06-23 12:35:44,355 INFO reaped unknown pid 204 (exit status 0)
+2024-06-23 12:35:44,355 INFO reaped unknown pid 205 (exit status 0)
+2024-06-23 12:35:50,993 INFO reaped unknown pid 240 (exit status 0)
+2024-06-23 12:35:50,994 INFO reaped unknown pid 247 (exit status 0)
+2024-06-23 12:35:50,994 INFO reaped unknown pid 250 (exit status 0)
+2024-06-23 12:35:50,995 INFO reaped unknown pid 276 (exit status 0)
+2024-06-23 12:35:50,995 INFO reaped unknown pid 317 (exit status 0)
+2024-06-23 12:35:50,996 INFO reaped unknown pid 274 (exit status 0)
+2024-06-23 12:39:09,015 WARN received SIGTERM indicating exit request
+2024-06-23 12:39:09,015 INFO waiting for django, lead_generator to die
+2024-06-23 12:39:10,018 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 12:39:11,026 WARN stopped: django (terminated by SIGTERM)

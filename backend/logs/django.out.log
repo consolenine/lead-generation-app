@@ -9,3 +9,394 @@ June 23, 2024 - 08:37:26
 Django version 5.0.4, using settings 'lead_generator.settings'
 Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
 Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 08:42:44
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 08:51:08
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 08:53:16
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 08:58:04
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 09:01:35
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 09:03:10
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 09:08:27
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 09:13:19
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 09:42:17
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 09:57:43
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 10:07:17
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 10:17:02
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 10:17:40
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 10:20:25
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 10:22:35
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 10:27:01
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:05:02
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:13:55
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:15:52
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:17:42
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:21:36
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:22:14
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:22:51
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:24:55
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:25:47
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:31:20
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:39:05
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:54:30
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 11:59:49
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 12:07:47
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 12:09:25
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 12:09:42
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 12:12:08
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 12:21:41
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 12:30:29
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 12:35:33
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.

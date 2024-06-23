@@ -166,17 +166,17 @@ class RequestQueue:
         while True:
             # print("---------START---------")
             # self.print_status()
-            async_to_sync(self.updates_channel.group_send)(
-                f"user_{self.owner}",
-            {
-                "type": "send_progress",
-                "message": {
-                    "task_id": self.task_id,
-                    "progress": self.data_queues["results"].get_size(),
-                    "status": "In Progress",
-                }
-            }
-            )
+            # await self.updates_channel.group_send(
+            #     f"user_{self.owner}",
+            #     {
+            #         "type": "send_progress",
+            #         "message": {
+            #             "task_id": self.task_id,
+            #             "progress": self.data_queues["results"].get_size(),
+            #             "status": "In Progress",
+            #         }
+            #     }
+            # )
             try:
                 stop_conditions = self.size == 0 and all(
                     [queue.is_empty() for queue in self.dependency_queues.values()]

@@ -54,16 +54,6 @@ class LeadGeneratorView(APIView):
             
             
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-    async def run_with_disconnect_check(self, coro, timeout=60):
-        task = asyncio.create_task(coro())
-        while not task.done():
-            await asyncio.sleep(1)
-            timeout = timeout - 1
-            if timeout <= 0:
-                task.cancel()
-                break
-        return await task
 
 class ScrapingTaskListView(APIView):
     permission_classes = [IsAuthenticated]
@@ -75,7 +65,7 @@ class ScrapingTaskListView(APIView):
                 "data": [
                     {
                         "id": task.id,
-                        "status": task.status,
+                        "status": task.StatusChoices(task.status).label,
                         "created_at": task.created_at,
                         "updated_at": task.updated_at,
                         "leads_count": task.leads_count,

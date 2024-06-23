@@ -10,11 +10,16 @@ services:
       - POSTGRES_DB=lead_app_db
       - POSTGRES_USER=lead_app_admin
       - POSTGRES_PASSWORD=lead_pass
-
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
   backend:
     build:
       context: ./backend
     container_name: backend
+    platform: linux/amd64
     ports:
       - "8000:8000"
     volumes:
@@ -22,17 +27,18 @@ services:
       - ./backend/logs:/usr/src/app/logs  # Mount logs directory into the container
     depends_on:
       - db
+      - redis
     environment:
       - ENVIRONMENT=prod
 
-  frontend:
-    build:
-      context: ./frontend
-    container_name: frontend
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./frontend:/app  # Mount frontend code into the container
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #   container_name: frontend
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - ./frontend:/app  # Mount frontend code into the container
 
 volumes:
   postgres_data:

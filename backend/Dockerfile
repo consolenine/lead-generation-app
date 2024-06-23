@@ -8,14 +8,9 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /usr/src/app
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y \
-    gcc \
-    libffi-dev \
-    postgresql-client \
-    chromium \
-    chromium-driver \
-    supervisor \
-    && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y gcc wget gnupg curl unzip libffi-dev postgresql-client supervisor; \
+    wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb; \
+    apt-get install -y ./google-chrome-stable_current_amd64.deb;
 
 # Copy the requirements file into the container
 COPY requirements.txt .
