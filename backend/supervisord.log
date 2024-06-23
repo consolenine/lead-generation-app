@@ -1,0 +1,30 @@
+2024-06-23 08:37:23,425 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-23 08:37:23,427 INFO supervisord started with pid 1
+2024-06-23 08:37:24,431 INFO spawned: 'celery_beat' with pid 7
+2024-06-23 08:37:24,435 INFO spawned: 'celery_worker' with pid 8
+2024-06-23 08:37:24,446 INFO spawned: 'django' with pid 9
+2024-06-23 08:37:24,447 INFO spawnerr: can't find command 'redis-server'
+2024-06-23 08:37:24,896 WARN exited: celery_beat (exit status 2; not expected)
+2024-06-23 08:37:24,897 WARN exited: celery_worker (exit status 2; not expected)
+2024-06-23 08:37:26,348 INFO spawned: 'celery_beat' with pid 13
+2024-06-23 08:37:26,350 INFO spawned: 'celery_worker' with pid 14
+2024-06-23 08:37:26,353 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 08:37:26,353 INFO spawnerr: can't find command 'redis-server'
+2024-06-23 08:37:26,780 WARN exited: celery_beat (exit status 2; not expected)
+2024-06-23 08:37:26,784 WARN exited: celery_worker (exit status 2; not expected)
+2024-06-23 08:37:28,795 INFO spawned: 'celery_beat' with pid 16
+2024-06-23 08:37:28,801 INFO spawned: 'celery_worker' with pid 17
+2024-06-23 08:37:28,801 INFO spawnerr: can't find command 'redis-server'
+2024-06-23 08:37:29,264 WARN exited: celery_worker (exit status 2; not expected)
+2024-06-23 08:37:29,265 WARN exited: celery_beat (exit status 2; not expected)
+2024-06-23 08:37:32,274 INFO spawned: 'celery_beat' with pid 18
+2024-06-23 08:37:32,276 INFO spawned: 'celery_worker' with pid 19
+2024-06-23 08:37:32,277 INFO spawnerr: can't find command 'redis-server'
+2024-06-23 08:37:32,278 INFO gave up: redis entered FATAL state, too many start retries too quickly
+2024-06-23 08:37:32,618 WARN exited: celery_beat (exit status 2; not expected)
+2024-06-23 08:37:32,622 INFO gave up: celery_beat entered FATAL state, too many start retries too quickly
+2024-06-23 08:37:32,622 WARN exited: celery_worker (exit status 2; not expected)
+2024-06-23 08:37:33,624 INFO gave up: celery_worker entered FATAL state, too many start retries too quickly
+2024-06-23 08:39:23,937 WARN received SIGTERM indicating exit request
+2024-06-23 08:39:23,942 INFO waiting for django to die
+2024-06-23 08:39:25,950 WARN stopped: django (terminated by SIGTERM)

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik, Field, Form } from 'formik';
 import { Link as ReactRouterLink, useNavigate } from 'react-router-dom';
 import { Link as ChakraLink } from '@chakra-ui/react';
@@ -7,21 +7,18 @@ import Cookies from 'js-cookie';
 import { useAuth } from '../../contexts/AuthContext';
 
 import {
-    Box,
-    Button,
-    Checkbox,
-    Flex,
-    FormControl,
-    FormLabel,
-    FormErrorMessage,
-    Input,
-    VStack,
+    Box, Button, Checkbox, Flex, FormControl,
+    FormLabel, FormErrorMessage, Input, VStack, 
+    CircularProgress, Alert, AlertIcon, AlertDescription,
 } from "@chakra-ui/react";
+
+import ShakeBox from '../ShakeBox';
 
   
 const LoginForm = () => {
     const navigate = useNavigate();
     const { setUser } = useAuth();
+    const [ processing, setProcessing ] = useState(false);
 
     return (
         <Formik
@@ -30,7 +27,9 @@ const LoginForm = () => {
                 password: '',
                 rememberMe: false,
             }}
+
             onSubmit={ async (values, { setSubmitting, setErrors }) => {
+                setProcessing(true);
                 try {
                     const response = await axiosInstance.post('/api/accounts/login/', {
                         username: values.email,
@@ -49,6 +48,7 @@ const LoginForm = () => {
                 } catch (error) {
                     // Handle login errors (e.g., show a message to the user)
                     setErrors({ general: 'Invalid email or password' });
+                    setProcessing(false);
                     console.log(error);
                 } finally {
                     setSubmitting(false);
@@ -58,6 +58,14 @@ const LoginForm = () => {
             {({ handleSubmit, errors, touched }) => (
                 <Form onSubmit={handleSubmit}>
                     <VStack spacing={4} align="flex-start">
+                        {errors.general && (
+                            <ShakeBox isError={true}>
+                                <Alert status="error" variant="solid">
+                                    <AlertIcon />
+                                    <AlertDescription>{errors.general}</AlertDescription>
+                                </Alert>
+                            </ShakeBox>
+                        )}
                         <FormControl w={[300,400,500]} isInvalid={!!errors.email && touched.email}>
                             <FormLabel htmlFor="email">Email Address</FormLabel>
                             <Field
@@ -120,7 +128,14 @@ const LoginForm = () => {
 
                         </Flex>
                         <Button type="submit" colorScheme="green" width="full">
-                        Login
+                            {processing ? (
+                                <>
+                                Logging in
+                                <CircularProgress isIndeterminate size="24px" color="green.400" />
+                                </>
+                            ) : (
+                                "Login"
+                            )}
                         </Button>
                         <ChakraLink as={ReactRouterLink} to='/accounts/signup'>
                             Don't have an account? Sign up here

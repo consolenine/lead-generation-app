@@ -5,24 +5,29 @@ import axiosInstance from '../../axiosConfig';
 import {
     Box, Button, Checkbox, Flex,
     FormControl, FormLabel, Textarea, FormErrorMessage,
-    Input, VStack, HStack,
+    Input, VStack, HStack, useToast,
 } from "@chakra-ui/react";
 
 import TagListInput from './TagListInput';
 
   
-const LeadGenerationForm = ({ close }) => {
+const LeadGenerationForm = ({ initialValues, close }) => {
+    const defaultValues = {
+        username: "",
+        tags: "",
+        allTagsCheckbox: false,
+        min_likes: 0,
+        max_likes: 1000000,
+        date: '2015-01-01',
+        limit: 20,
+    };
+
+    const combinedValues = { ...defaultValues, ...initialValues };
+
+    const toast = useToast();
     return (
         <Formik
-            initialValues={{
-                username: "",
-                tags: "",
-                allTagsCheckbox: false,
-                min_likes: 0,
-                max_likes: 1000000,
-                date: '2015-01-01',
-                limit: 20,
-            }}
+            initialValues={combinedValues}
             onSubmit={async (values) => {
                 try {
                     const response = await axiosInstance.post('/api/scraper/generate/', values);
@@ -31,6 +36,15 @@ const LeadGenerationForm = ({ close }) => {
                 } catch (error) {
                     console.error('Error fetching data:', error);
                 }
+                toast({
+                    title: 'Request Submitted',
+                    description: "Task has been queued.",
+                    status: 'success',
+                    duration: 5000,
+                    isClosable: true,
+                    position: 'bottom-right'
+                })
+                close();
             }}
         >
             {({ handleSubmit, errors, touched }) => (

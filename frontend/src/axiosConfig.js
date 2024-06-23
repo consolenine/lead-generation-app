@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 
 const axiosInstance = axios.create({
     baseURL: 'http://159.89.4.217:8000/',
+    baseURL: 'http://localhost:8000',
     withCredentials: true,
 });
 

@@ -6,7 +6,6 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializers import LeadRequestSerializer
 from .models import ScrapingTask, Lead
-from .leadgen import leadGenerator
 from django.http import JsonResponse
 import csv
 from django.conf import settings
@@ -37,8 +36,8 @@ class LeadGeneratorView(APIView):
             max_leads = serializer.validated_data.get("limit")
             all_tags = serializer.validated_data.get("searchAllTags")
             
+    
             task = ScrapingTask.objects.create(
-                status="running",
                 owner=request.user,
                 config = {
                     "users": users,
@@ -51,85 +50,9 @@ class LeadGeneratorView(APIView):
                 }
             )
             
-            async def main():
-                return await leadGenerator(
-                    users,
-                    filters={
-                        "min_likes": int(min_likes),
-                        "max_likes": int(max_likes),
-                        "last_updated": last_updated,
-                        "tags": tags,
-                        "all_tags": all_tags,
-                        "search_title": True,
-                        "max_leads": int(max_leads),
-                    },
-                )
-
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-            try:
-                result = loop.run_until_complete(self.run_with_disconnect_check(main))
-                if result:
-                    task.status = "Completed"
-                    task.save()
-            except asyncio.CancelledError:
-                task.status = "Failed"
-                task.save()
-                return Response({"detail": "Client disconnected"}, status=status.HTTP_410_GONE)
-            except Exception as e:
-                task.status = "Failed"
-                task.save()
-                print(e)
-                return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-            data = []
-            for item in result:
-                data.append(
-                    {
-                        "user": item["user"],
-                        "links": {
-                            "free": list(item["links"]["free"]),
-                            "paid": list(item["links"]["paid"]),
-                            "others": list(item["links"]["others"]),
-                        },
-                        "email": list(item["email"]),
-                        "phone": list(item["phone"]),
-                        "related_playlists": list(item["related_playlists"]),
-                    }
-                )
-            csv_file_path = settings.BASE_DIR / "static/files/spotify_leads.csv"
-            with open(csv_file_path, "w") as file:
-                writer = csv.writer(file)
-                writer.writerow(["User ID", "Email", "Phone", "Free Links", "Paid Links", "Others", "Related Playlists"])
-                for item in data:
-                    writer.writerow([
-                        item["user"]["id"],
-                        ",".join(item["email"]),
-                        ",".join(item["phone"]),
-                        ",".join(item["links"]["free"]),
-                        ",".join(item["links"]["paid"]),
-                        ",".join(item["links"]["others"]),
-                        ",".join(item["related_playlists"][0]),
-                    ])
+            return Response({"task_id": task.id}, status=status.HTTP_201_CREATED)
             
-            Lead.objects.bulk_create(
-                [
-                    Lead(
-                        spotify_username=item["user"] or "Placeholder",
-                        email=item["email"],
-                        phone=item["phone"],
-                        related_playlists=item["related_playlists"],
-                        free_links=item["links"]["free"],
-                        paid_links=item["links"]["paid"],
-                        others_links=item["links"]["others"],
-                        owner=request.user,
-                        parent_task=task,
-                    )
-                    for item in data
-                ]
-            )
-
-            return JsonResponse(data, safe=False)
+            
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
     async def run_with_disconnect_check(self, coro, timeout=60):

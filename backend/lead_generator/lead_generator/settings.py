@@ -12,10 +12,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
-from dotenv import dotenv_values, load_dotenv
 import os
 environment = os.environ.get("ENVIRONMENT", "dev")
-load_dotenv(f".env.{environment}")
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,6 +44,8 @@ CORS_ALLOW_CREDENTIALS = True
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
+    "django_extensions",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -109,6 +109,30 @@ REST_KNOX = {
 
 WSGI_APPLICATION = "lead_generator.wsgi.application"
 
+ASGI_APPLICATION = "lead_generator.asgi.application"
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("127.0.0.1", 6379)],
+        },
+    },
+}
+
+CELERY_BROKER_URL = "redis://localhost:6379"
+CELERY_RESULT_BACKEND = "redis://localhost:6379"
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+
+CELERY_BEAT_SCHEDULE = {
+    'check-queued-tasks': {
+        'task': 'scraper.tasks.check_queued_tasks',
+        'schedule': 10.0,  # Run every 60 seconds
+    },
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -116,11 +140,11 @@ WSGI_APPLICATION = "lead_generator.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("DB_NAME"),
-        "USER": os.environ.get("DB_USER"),
-        "PASSWORD": os.environ.get("DB_PASSWORD"),
-        "HOST": os.environ.get("DB_HOST"),
-        "PORT": os.environ.get("DB_PORT"),
+        "NAME": "lead_app_db",
+        "USER": "lead_app_admin",
+        "PASSWORD": "lead_pass",
+        "HOST": "db",
+        "PORT": "5432",
         'OPTIONS': {
             'options': '-c search_path=lead_app_schema,public'
         }

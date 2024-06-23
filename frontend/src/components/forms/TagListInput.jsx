@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Input, Tag, TagLabel, TagCloseButton, Wrap, WrapItem } from '@chakra-ui/react';
 import { useFormikContext } from 'formik';
 
@@ -28,6 +28,12 @@ const TagListInput = ({ field, form, ...props }) => {
         setTags(newTags);
         values[props.name] = newTags.join('&');
     };
+
+    useEffect(() => {
+        if (values[props.name]) {
+            setTags(values[props.name].split('&'));
+        }
+    }, []);
 
     return (
         <>

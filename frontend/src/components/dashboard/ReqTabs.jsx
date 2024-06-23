@@ -9,6 +9,7 @@ const ReqTabs = () => {
                 <Tab>All Requests</Tab>
                 <Tab>Queued</Tab>
                 <Tab>Completed</Tab>
+                <Tab>Failed</Tab>
             </TabList>
             <TabPanels>
                 <TabPanel>
@@ -19,6 +20,9 @@ const ReqTabs = () => {
                 </TabPanel>
                 <TabPanel>
                 <p>four!</p>
+                </TabPanel>
+                <TabPanel>
+                <p>five!</p>
                 </TabPanel>
             </TabPanels>
         </Tabs>

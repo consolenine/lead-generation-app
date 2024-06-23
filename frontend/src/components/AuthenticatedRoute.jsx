@@ -8,7 +8,6 @@ const AuthenticatedRoute = () => {
     if (loading) {
         return <div>Loading...</div>;
     }
-    console.log(user)
     return user ? <Outlet /> : <Navigate to="/accounts/login" />;
 }
 

@@ -11,7 +11,7 @@ const LeadsTable = ({ leads }) => {
     };
 
     return (
-        <Box overflowX="auto">
+        <Box overflowX="scroll" width="80vw">
             <TableContainer>
                 <Table variant="unstyled">
                     <Thead>

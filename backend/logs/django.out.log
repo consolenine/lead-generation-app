@@ -1,0 +1,11 @@
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, knox, scraper, sessions
+Running migrations:
+  No migrations to apply.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 23, 2024 - 08:37:26
+Django version 5.0.4, using settings 'lead_generator.settings'
+Starting ASGI/Daphne version 4.1.2 development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.

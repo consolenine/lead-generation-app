@@ -8,14 +8,18 @@ import traceback
 import time
 import json
 from aiohttp.client_exceptions import ServerDisconnectedError
+from asgiref.sync import async_to_sync
 
 
 class RequestQueue:
-    def __init__(self, users=[], limit=50, filters=None, playlist_debug=None):
+    def __init__(self, owner, task_id, users=[], limit=50, filters=None, playlist_debug=None, updates_channel=None):
+        self.owner = owner
+        self.task_id = task_id
         self.queue = []
         self.size = 0
         self.limit = limit
         self.filters = filters
+        self.updates_channel = updates_channel
 
         self.users = UserQueue()
         self.users.addBack([SpotifyUser(user) for user in users])
@@ -162,6 +166,17 @@ class RequestQueue:
         while True:
             # print("---------START---------")
             # self.print_status()
+            async_to_sync(self.updates_channel.group_send)(
+                f"user_{self.owner}",
+            {
+                "type": "send_progress",
+                "message": {
+                    "task_id": self.task_id,
+                    "progress": self.data_queues["results"].get_size(),
+                    "status": "In Progress",
+                }
+            }
+            )
             try:
                 stop_conditions = self.size == 0 and all(
                     [queue.is_empty() for queue in self.dependency_queues.values()]

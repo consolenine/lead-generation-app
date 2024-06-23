@@ -35,7 +35,17 @@ class Lead(models.Model):
         db_table = 'leads'
 
 class ScrapingTask(models.Model):
-    status = models.CharField(max_length=255)
+    class StatusChoices(models.TextChoices):
+        QUEUED = '1', 'Queued'
+        IN_PROGRESS = '2', 'In Progress'
+        COMPLETED = '3', 'Completed'
+        FAILED = '4', 'Failed'
+
+    status = models.CharField(
+        max_length=20,
+        choices=StatusChoices.choices,
+        default=StatusChoices.QUEUED
+    )
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     config = models.JSONField(default=dict)

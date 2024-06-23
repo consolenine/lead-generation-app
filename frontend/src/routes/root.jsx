@@ -10,7 +10,7 @@ export default function Root() {
     const { user } = useAuth();
 
     if (user) {
-        return <Navigate to="/dashboard" />;
+        return <Navigate to="/dashboard/lead-generation" />;
     }
 
     return (

@@ -6,22 +6,26 @@ import {
     Th, Td, Box, Text, List, 
     ListItem, ListIcon, Flex,
     Divider, HStack, VStack, Button,
-    useDisclosure, Icon
+    useDisclosure, Icon, Skeleton,
+    Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody
 } from "@chakra-ui/react";
 import { IconTag, IconPlus } from "@tabler/icons-react";
 import LeadsTable from "./LeadsTable";
+import { LeadGenerationForm } from "../forms";
 
 const ReqDetails = () => {
     const { id } = useParams();
     const [task, setTask] = useState({});
     const [leads, setLeads] = useState([]);
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const [cloneData, setCloneData] = useState({});
 
     useEffect(() => {
         axiosInstance.get(`/api/scraper/tasks/${id}/`)
         .then((response) => {
             setTask(response.data.task);
             setLeads(response.data.leads);
+            
         })
         .catch((error) => {
             console.log(error);
@@ -29,40 +33,51 @@ const ReqDetails = () => {
     
     },[]);
 
-    const cloneReq = null;
+    const cloneReq = () => {
+        setCloneData({
+            "username": task.config.users.join("&"),
+            "tags": task.config.tags.join("&"),
+            "allTagsCheckbox": task.config.allTags,
+            "min_likes": task.config.min_likes,
+            "max_likes": task.config.max_likes,
+            "date": task.config.last_updated,
+            "limit": task.config.max_leads,
+        });
+        onOpen();
+    }
 
     return (
         <Box>
             <Flex gap={8} mt={[4,4,12]}>
                 <Box borderRadius="md">
-                <Table variant="simple" maxWidth="fit-content" border="1px solid" borderColor="gray.700">
-                    <Thead>
-                    <Tr>
-                        <Th>Key</Th>
-                        <Th>Value</Th>
-                    </Tr>
-                    </Thead>
-                    <Tbody>
-                    {
-                        task && Object.entries(task).map(([key, value]) => {
-                            if (value instanceof Object) {
-                                return (<></>)
-                            } else {
-                                return (
-                                    <Tr key={key}>
-                                        {console.log(key)}
-                                        <Td>{key}</Td>
-                                        <Td>
-                                            <Text>{value}</Text>
-                                        </Td>
-                                    </Tr>
-                                )
+                    <Table variant="simple" maxWidth="fit-content" border="1px solid" borderColor="gray.700">
+                        <Thead>
+                        <Tr>
+                            <Th>Key</Th>
+                            <Th>Value</Th>
+                        </Tr>
+                        </Thead>
+                        <Tbody>
+                        {
+                            task && Object.entries(task).map(([key, value]) => {
+                                if (value instanceof Object) {
+                                    return (<></>)
+                                } else {
+                                    return (
+                                        <Tr key={key}>
+                                            {console.log(key)}
+                                            <Td>{key}</Td>
+                                            <Td>
+                                                <Text>{value}</Text>
+                                            </Td>
+                                        </Tr>
+                                    )
+                                }
                             }
+                            )
                         }
-                        )
-                    }
-                    </Tbody>
-                </Table>
+                        </Tbody>
+                    </Table>
                 </Box>
                 <Table variant="simple" maxWidth="fit-content" border="1px solid" borderColor="gray.700">
                     <Thead>
@@ -105,6 +120,16 @@ const ReqDetails = () => {
                     <LeadsTable leads={leads} />
                 )
             }
+            <Modal onClose={onClose} isOpen={isOpen}>
+                <ModalOverlay />
+                <ModalContent w="800px" maxW="90%" className="gradient-dark-1">
+                    <ModalHeader>Create Request</ModalHeader>
+                    <ModalCloseButton />
+                    <ModalBody>
+                        <LeadGenerationForm close={onClose} initialValues={cloneData} />
+                    </ModalBody>
+                </ModalContent>
+            </Modal>
         </Box>
     )
 }

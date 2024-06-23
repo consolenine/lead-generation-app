@@ -4,12 +4,12 @@ from .requester.queues import UserQueue
 from .requester.request_queue import RequestQueue
 
 
-async def leadGenerator(users=[], filters=None):
+async def leadGenerator(owner, task_id, users=[], filters=None, updates_channel=None):
     print(filters)
     playlist_debug = []
     playlist_debug_headers = ["Playlist URL", "Playlist Title", "Playlist Description"]
     main_queue = RequestQueue(
-        users=users, limit=100, filters=filters, playlist_debug=playlist_debug
+        owner, task_id, users=users, limit=100, filters=filters, playlist_debug=playlist_debug, updates_channel=updates_channel
     )
 
     leads = await main_queue.run()
