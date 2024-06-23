@@ -878,3 +878,7 @@
 2024-06-23 12:51:18,957 INFO spawned: 'lead_generator' with pid 13
 2024-06-23 12:51:19,968 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2024-06-23 12:51:19,968 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-23 12:59:39,695 WARN received SIGTERM indicating exit request
+2024-06-23 12:59:39,698 INFO waiting for django, lead_generator to die
+2024-06-23 12:59:40,702 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-23 12:59:41,710 WARN stopped: django (terminated by SIGTERM)
