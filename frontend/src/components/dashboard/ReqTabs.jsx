@@ -4,7 +4,7 @@ import ReqList from './ReqList';
 
 const ReqTabs = () => {
     return (
-        <Tabs variant='soft-rounded' colorScheme='green' mt={4}>
+        <Tabs variant='soft-rounded' colorScheme='green' mt={4} isLazy>
             <TabList>
                 <Tab>All Requests</Tab>
                 <Tab>Queued</Tab>
@@ -13,16 +13,16 @@ const ReqTabs = () => {
             </TabList>
             <TabPanels>
                 <TabPanel>
-                    <ReqList />
+                    <ReqList type="all" />
                 </TabPanel>
                 <TabPanel>
-                <p>two!</p>
+                    <ReqList type="queued" />
                 </TabPanel>
                 <TabPanel>
-                <p>four!</p>
+                    <ReqList type="completed" />
                 </TabPanel>
                 <TabPanel>
-                <p>five!</p>
+                    <ReqList type="failed" />
                 </TabPanel>
             </TabPanels>
         </Tabs>

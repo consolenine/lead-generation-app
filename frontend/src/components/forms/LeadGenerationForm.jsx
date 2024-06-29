@@ -5,7 +5,7 @@ import axiosInstance from '../../axiosConfig';
 import {
     Box, Button, Checkbox, Flex,
     FormControl, FormLabel, Textarea, FormErrorMessage,
-    Input, VStack, HStack, useToast,
+    Input, VStack, HStack, useToast, Select
 } from "@chakra-ui/react";
 
 import TagListInput from './TagListInput';
@@ -97,9 +97,15 @@ const LeadGenerationForm = ({ initialValues, close }) => {
                             <FormErrorMessage>{errors.date}</FormErrorMessage>
                         </FormControl>
 
-                        <FormControl isInvalid={!!errors.limit && touched.limit}>
-                            <FormLabel htmlFor="limit">Maximum Leads</FormLabel>
-                            <Field as={Input} id="limit" name="limit" type="number" placeholder="Maximum Leads" />
+                        <FormControl isInvalid={!!errors.limit}>
+                            <FormLabel htmlFor="limit">Run Duration</FormLabel>
+                            <Field as={Select} id="limit" name="limit" type="number" placeholder="Select Run Duration">
+                                {
+                                    [15, 30, 60, 90, 120, 180, 240, 300, 360].map((value) => (
+                                        <option key={value} value={value}>{value > 90 ? (value / 60) + " hours" : value + " minutes"}</option>
+                                    ))
+                                }
+                            </Field>
                             <FormErrorMessage>{errors.limit}</FormErrorMessage>
                         </FormControl>
 

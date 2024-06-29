@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializers import LeadRequestSerializer
 from .models import ScrapingTask, Lead
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 import csv
 from django.conf import settings
 
@@ -46,7 +46,7 @@ class LeadGeneratorView(APIView):
                     "last_updated": last_updated,
                     "min_likes": min_likes,
                     "max_likes": max_likes,
-                    "max_leads": max_leads,
+                    "run_limit": max_leads,
                 }
             )
             
@@ -58,8 +58,19 @@ class LeadGeneratorView(APIView):
 class ScrapingTaskListView(APIView):
     permission_classes = [IsAuthenticated]
     
-    def get(self, request):
-        tasks = ScrapingTask.objects.filter(owner=request.user)
+    def get(self, request, type):
+        tasks = None
+
+        # Filter tasks based on the 'type' parameter
+        if type == 'queued':
+            tasks = ScrapingTask.objects.filter(owner=request.user, status=ScrapingTask.StatusChoices.QUEUED)
+        elif type == 'failed':
+            tasks = ScrapingTask.objects.filter(owner=request.user, status=ScrapingTask.StatusChoices.FAILED)
+        elif type == 'completed':
+            tasks = ScrapingTask.objects.filter(owner=request.user, status=ScrapingTask.StatusChoices.COMPLETED)
+        else:
+            tasks = ScrapingTask.objects.filter(owner=request.user)
+        
         return JsonResponse(
             {
                 "data": [
@@ -130,3 +141,27 @@ class LeadsByTaskView(APIView):
                 ]
             }
         )
+
+class ExportLeadsView(APIView):
+    permission_classes = [IsAuthenticated]
+    
+    def get(self, request, pk):
+        task = ScrapingTask.objects.get(owner=request.user, id=pk)
+        if not task:
+            return Response({"message": "Task not found"}, status=status.HTTP_404_NOT_FOUND)
+        
+        leads = Lead.objects.filter(owner=request.user, parent_task_id=task)
+
+        # Create the HttpResponse object with the appropriate CSV header.
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="leads.csv"'
+
+        writer = csv.writer(response)
+        # Write the header
+        writer.writerow(['Lead ID', 'Playlist Owner', 'Emails', 'Phone Numbers', 'Related Playlists', 'Free Links', 'Paid Links', 'Others Links', 'Created At'])
+
+        # Write data rows
+        for lead in leads:
+            writer.writerow([lead.id, lead.spotify_username, lead.email, lead.phone, lead.related_playlists, lead.free_links, lead.paid_links, lead.others_links, lead.created_at])
+
+        return response

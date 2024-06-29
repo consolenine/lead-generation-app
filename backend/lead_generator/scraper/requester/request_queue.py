@@ -34,7 +34,7 @@ class RequestQueue:
         self.data_queues = {
             "users": self.users,
             "artists": ArtistQueue(),
-            "results": ResponseQueue(limit=filters["max_leads"]),
+            "results": ResponseQueue(),
             "playlist_debug": playlist_debug,
         }
 
@@ -104,6 +104,7 @@ class RequestQueue:
         )
 
     async def process_items(self):
+        print("Round Started")
         # print("MID-PROCESS")
         # self.print_status()
         if self.is_empty():
@@ -140,23 +141,23 @@ class RequestQueue:
                 self.queue = list(filter(lambda x: x.processed == 0, self.queue))
                 self.size = len(self.queue)
 
-                with open("leads.json", "w") as f:
-                    data = []
-                    for item in self.data_queues["results"].get_stack():
-                        data.append(
-                            {
-                                "user": item["user"],
-                                "links": {
-                                    "free": list(item["links"]["free"]),
-                                    "paid": list(item["links"]["paid"]),
-                                    "others": list(item["links"]["others"]),
-                                },
-                                "email": list(item["email"]),
-                                "phone": list(item["phone"]),
-                                "related_playlists": list(item["related_playlists"]),
-                            }
-                        )
-                    json.dump(data, f, indent=4)
+                # with open("leads.json", "w") as f:
+                #     data = []
+                #     for item in self.data_queues["results"].get_stack():
+                #         data.append(
+                #             {
+                #                 "user": item["user"],
+                #                 "links": {
+                #                     "free": list(item["links"]["free"]),
+                #                     "paid": list(item["links"]["paid"]),
+                #                     "others": list(item["links"]["others"]),
+                #                 },
+                #                 "email": list(item["email"]),
+                #                 "phone": list(item["phone"]),
+                #                 "related_playlists": list(item["related_playlists"]),
+                #             }
+                #         )
+                #     json.dump(data, f, indent=4)
             except QueueOverflowException as e:
                 print(e)
                 return
@@ -183,8 +184,8 @@ class RequestQueue:
                 )
 
                 # Stop collecting leads
-                if self.data_queues["results"].is_full():
-                    return self.data_queues["results"].get_stack()
+                # if self.data_queues["results"].is_full():
+                #     return self.data_queues["results"].get_stack()
 
                 # When all other queues are empty except user queue, get new users
                 if stop_conditions and not self.data_queues["users"].is_empty():
@@ -301,7 +302,7 @@ class RequestQueue:
                 print("TIME RUNNING (seconds): ", int(time.time() - time_started))
                 print("TIME RUNNING (minutes): ", (time.time() - time_started) // 60)
                 self.print_status()
-                if (time.time() - time_started) // 60 >= 15:
+                if (time.time() - time_started) // 60 >= int(self.filters["run_limit"]):
                     print("Process Timeout....Exiting")
                     break
             except QueryFailedException as e:

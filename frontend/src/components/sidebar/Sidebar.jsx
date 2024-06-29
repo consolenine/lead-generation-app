@@ -26,10 +26,10 @@ const Sidebar = () => {
                     <Icon as={IconHomeFilled} w={6} h={6} mr={4} />
                     <Text>Lead Generation</Text>
                 </SidebarLink>
-                <SidebarLink as={ReactRouterLink} to="/dashboard/leads-all" active={location.pathname === '/dashboard/leads-all'}>
+                {/* <SidebarLink as={ReactRouterLink} to="/dashboard/leads-all" active={location.pathname === '/dashboard/leads-all'}>
                     <Icon as={IconChartDots} w={6} h={6} mr={4} />
                     <Text>All Leads</Text>
-                </SidebarLink>
+                </SidebarLink> */}
                 <SidebarLink active={location.pathname === '/dashboard/billing'}>
                     <Icon as={IconCreditCard} w={6} h={6} mr={4} />
                     <Text>Billing</Text>

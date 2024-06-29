@@ -6,7 +6,7 @@ import {
     Th, Td, Box, Text, List, 
     ListItem, ListIcon, Flex,
     Divider, HStack, VStack, Button,
-    useDisclosure, Icon, Skeleton,
+    useDisclosure, Icon, Skeleton, Link,
     Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody
 } from "@chakra-ui/react";
 import { IconTag, IconPlus } from "@tabler/icons-react";
@@ -41,9 +41,24 @@ const ReqDetails = () => {
             "min_likes": task.config.min_likes,
             "max_likes": task.config.max_likes,
             "date": task.config.last_updated,
-            "limit": task.config.max_leads,
+            "limit": task.config.run_limit,
         });
         onOpen();
+    }
+
+    const exportToCSV = () => {
+        axiosInstance.get(`/api/scraper/tasks/${id}/leads/export`)
+        .then((response) => {
+            const url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'leads.csv');
+            document.body.appendChild(link);
+            link.click();
+        })
+        .catch((error) => {
+            console.log(error);
+        });
     }
 
     return (
@@ -61,7 +76,7 @@ const ReqDetails = () => {
                         {
                             task && Object.entries(task).map(([key, value]) => {
                                 if (value instanceof Object) {
-                                    return (<></>)
+                                    return
                                 } else {
                                     return (
                                         <Tr key={key}>
@@ -111,7 +126,7 @@ const ReqDetails = () => {
                 </Table>
                 <VStack spacing={4} align="flex-start">
                         <Button onClick={cloneReq} variant="outline" colorScheme="blue" size="md">CLONE & RESEND</Button>
-                        <Button colorScheme="green" size="md">EXPORT</Button>
+                        <Button colorScheme="green" onClick={exportToCSV} size="md">EXPORT LEADS</Button>
                 </VStack>
             </Flex>
             <Divider my="4" />

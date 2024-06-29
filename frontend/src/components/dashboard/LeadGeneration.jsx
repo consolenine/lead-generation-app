@@ -32,7 +32,7 @@ const LeadGeneration = () => {
                         <Icon as={IconPlus} w={6} h={6} mr={2} />
                         <Text>Create New Request</Text>
                     </Button>
-                    <Progress 
+                    {/* <Progress 
                         h={28} 
                         borderRadius="2xl" 
                         flex={0.7}
@@ -44,7 +44,7 @@ const LeadGeneration = () => {
                     >
                         <Text color="green.400" variant="h1" as="b">Lead Generation Task Running</Text>
                         <Heading>2/20</Heading>
-                    </Progress>
+                    </Progress> */}
                 </HStack>
                 <Divider my={2} />
                 <Outlet />

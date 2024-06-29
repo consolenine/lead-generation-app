@@ -7,7 +7,7 @@ import {
 import axiosInstance from '../../axiosConfig';
 import { format } from 'date-fns';
 
-const ReqList = () => {
+const ReqList = ({ type }) => {
 
     const [columns, setColumns] = useState(['Index', 'Status', 'Created At', 'Time Running', 'Leads Generated']);
     const [data, setData] = useState([]);
@@ -24,7 +24,7 @@ const ReqList = () => {
     }
 
     useEffect(() => {
-        axiosInstance.get('/api/scraper/scraping-tasks/')
+        axiosInstance.get(`/api/scraper/scraping-tasks/${type}`)
         .then((response) => {
             const data = response.data.data;
             setColumns(data.length > 0 ? Object.keys(data[0]) : []);
@@ -46,7 +46,7 @@ const ReqList = () => {
                     </Tr>
                 </Thead>
                 <Tbody>
-                    {data.map((row, rowIndex) => (
+                    {data.length > 0 ? data.map((row, rowIndex) => (
                         <Tr 
                             key={rowIndex}
                             _hover={{ background: 'whiteAlpha.100', cursor: 'pointer' }}
@@ -60,7 +60,14 @@ const ReqList = () => {
                                 </Td>
                             ))}
                         </Tr>
-                    ))}
+                    )) : 
+                    <Tr>
+                        <Td colSpan={columns.length} textAlign='center'>
+                            <Box p={4} color='red.800' borderRadius='md'>
+                                No data available
+                            </Box>
+                        </Td>
+                    </Tr>}
                 </Tbody>
             </Table>
         </TableContainer>

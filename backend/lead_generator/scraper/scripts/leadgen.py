@@ -1,7 +1,7 @@
 import os
 import django
 # Set up Django environment
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_project.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'lead_generator.settings')
 django.setup()
 
 import asyncio
@@ -94,7 +94,7 @@ async def process_tasks():
         for task in tasks:
             channel_layer = get_channel_layer()
             users, filters = task.config["users"], task.config
-            
+            print(users, filters)
             # Update the task status to IN_PROGRESS atomically
             await sync_to_async(update_task_status_to_in_progress)(task)
             
