@@ -146,8 +146,8 @@ class PlaylistDetailedQueue(BaseQueue):
 
 
 class ResponseQueue(BaseQueue):
-    def __init__(self, limit=100):
-        super().__init__(limit=limit)
+    def __init__(self):
+        super().__init__()
 
     def get_user(self, uid):
         for item in self.stack:
