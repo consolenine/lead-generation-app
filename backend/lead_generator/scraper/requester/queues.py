@@ -156,6 +156,8 @@ class ResponseQueue(BaseQueue):
         return None
 
     def is_full(self):
+        if self.limit is None:
+            return False
         user_count = 0
         for item in self.stack:
             link_count = (
