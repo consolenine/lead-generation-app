@@ -1010,3 +1010,37 @@
 2024-06-29 16:50:27,530 INFO waiting for django, lead_generator to die
 2024-06-29 16:50:28,535 WARN stopped: lead_generator (terminated by SIGTERM)
 2024-06-29 16:50:29,542 WARN stopped: django (terminated by SIGTERM)
+2024-06-29 17:00:06,645 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-29 17:00:06,648 INFO supervisord started with pid 1
+2024-06-29 17:00:07,663 INFO spawned: 'django' with pid 12
+2024-06-29 17:00:07,672 INFO spawned: 'lead_generator' with pid 13
+2024-06-29 17:00:08,678 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-29 17:00:08,680 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-29 17:15:52,609 INFO reaped unknown pid 129 (exit status 0)
+2024-06-29 17:15:52,610 INFO reaped unknown pid 130 (exit status 0)
+2024-06-29 17:15:53,615 INFO reaped unknown pid 205 (exit status 0)
+2024-06-29 17:15:53,617 INFO reaped unknown pid 206 (exit status 0)
+2024-06-29 17:19:57,034 WARN received SIGTERM indicating exit request
+2024-06-29 17:19:57,036 INFO waiting for django, lead_generator to die
+2024-06-29 17:19:58,040 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-29 17:19:59,043 WARN stopped: django (terminated by SIGTERM)
+2024-06-29 17:20:03,337 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-29 17:20:03,340 INFO supervisord started with pid 1
+2024-06-29 17:20:04,357 INFO spawned: 'django' with pid 11
+2024-06-29 17:20:04,362 INFO spawned: 'lead_generator' with pid 12
+2024-06-29 17:20:05,369 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-29 17:20:05,370 INFO success: lead_generator entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-29 17:20:07,068 INFO reaped unknown pid 108 (exit status 0)
+2024-06-29 17:20:07,069 INFO reaped unknown pid 109 (exit status 0)
+2024-06-29 17:20:07,069 INFO reaped unknown pid 189 (exit status 0)
+2024-06-29 17:20:07,069 INFO reaped unknown pid 190 (exit status 0)
+2024-06-29 17:20:13,854 INFO reaped unknown pid 224 (exit status 0)
+2024-06-29 17:20:13,854 INFO reaped unknown pid 232 (exit status 0)
+2024-06-29 17:20:13,855 INFO reaped unknown pid 235 (exit status 0)
+2024-06-29 17:20:13,855 INFO reaped unknown pid 260 (exit status 0)
+2024-06-29 17:20:13,855 INFO reaped unknown pid 301 (exit status 0)
+2024-06-29 17:20:13,855 INFO reaped unknown pid 258 (exit status 0)
+2024-06-29 17:37:50,633 WARN received SIGTERM indicating exit request
+2024-06-29 17:37:50,635 INFO waiting for django, lead_generator to die
+2024-06-29 17:37:51,638 WARN stopped: lead_generator (terminated by SIGTERM)
+2024-06-29 17:37:52,642 WARN stopped: django (terminated by SIGTERM)

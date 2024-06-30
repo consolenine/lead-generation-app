@@ -199,7 +199,7 @@ class UserPlaylistQuery(BaseQuery):
                             )
 
                 else:
-                    playlist_query = PlaylistDetailsQuery(self.user, item["id"])
+                    playlist_query = PlaylistDetailsQuery(item["owner"]["id"], item["owner"]["display_name"], item["id"])
                     callback_queues["playlists"].addBack(playlist_query)
 
             # user = user_queue.get_user(self.user)
